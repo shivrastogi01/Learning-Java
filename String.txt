@@ -1,0 +1,45 @@
+      ************************************STRING****************************************
+	  1.String is non-primitive Data-type.
+	  2.String is the sequence of character.(Array of character)
+	    eg. char[] c={'d','e','b','g','h'}
+			String s=new String (c);//Interface (CharSequence)
+			
+	  3. String is a Class.
+		
+		public final class String extends Object implements CharSequence,comparable,Serialized.
+		{
+		  ....Object is a parent class of String.
+		  ....
+		  
+		  
+		}
+		
+	4.String s= new string ();
+	 String is an immutable object.
+	
+	5.To create String there are 3 Classes
+	...String
+	...StringBuffer
+	...StringBuilder
+	
+	There are five different type of Memory Areas
+		...Method Area
+		...Heap Area(SCP)String Constant pool
+		...Stack Area
+		...PC Register
+		...Native Method Area
+							
+	6.	Different type of constructor in String
+	..public String()
+	..public String (String s)
+	..public String (String Buffer 	sb)
+	..public String(StringBuilder sb)
+    ..public String (char[] ch)
+    ..public String (byte[] b)
+    	.....
+		
+	7.StringBuffer and StringBuilder are mutable but the String is Immutable.
+    8.Why char array is preferred over String for storing password.
+    In String the obect never get deleted it always there in SCP therefore someone should hack the passoword.
+    another reason is char array should only print object outsides values it doesnot print any value inside the char array.But String should print the value.	
+																																																													

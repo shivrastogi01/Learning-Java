@@ -1,0 +1,8 @@
+public class Cklen
+{
+public static void main(String [] agrs )
+		{
+		String s1="shiv";
+         System.out.println(s1.length());		
+		}
+}
