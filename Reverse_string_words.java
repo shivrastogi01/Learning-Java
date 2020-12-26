@@ -8,7 +8,7 @@ public class Reverse_string_words
 		System.out.print("Enter a string: ");  
 		String s= sc.nextLine();  
 		
-		String stringTokens[]=s.split(" ");
+		String stringTokens[]=s.split("[ ,.	?@'!]+");
 		
 			for(int len = stringTokens.length-1;len>=0;len--)
 			System.out.print(stringTokens[len]+" ");
