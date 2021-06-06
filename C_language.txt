@@ -1,0 +1,56 @@
+#include <stdio.h>
+struct student {
+    char Name[50];
+    int roll;
+    float English,Maths,C,Java,DS;
+} s[10];
+
+int main() {
+    int i,num;
+    printf("Enter information of students:\n");
+    printf("Enter how many many student ");
+    scanf("%d",&num);
+   
+    
+
+    // storing information
+    for (i = 0; i < num; ++i) {
+        s[i].roll = i + 1;
+        printf("\nFor roll number%d,\n", s[i].roll);
+        printf("Enter Name: ");
+        scanf("%s", s[i].Name);
+        printf("Enter marks in English : ");
+        scanf("%f", &s[i].English);
+        
+        printf("Enter marks in  Maths : ");
+        scanf("%f", &s[i].Maths);
+        
+        printf("Enter marks in  Java : ");
+        scanf("%f", &s[i].Java);
+        
+        printf("Enter marks in  C : ");
+        scanf("%f", &s[i].C);
+        
+        printf("Enter marks in Data-Structure : ");
+        scanf("%f", &s[i].DS);
+    }
+    printf("\nDisplaying Information:\n");
+
+    // displaying information
+    for (i = 0; i <num; ++i) {
+        printf("\nRoll number: %d\n", i + 1);
+        printf("Name: ");
+        puts(s[i].Name);
+        printf("Marks in English : %.1f", s[i].English);
+        
+        printf("\nMarks in Maths : %.1f", s[i].Maths);
+        
+        printf("\nMarks in Java : %.1f", s[i].Java);
+        
+        printf("\nMarks in C : %.1f", s[i].C);
+        
+        printf("\nMarks in Data-Structre : %.1f", s[i].DS);
+        printf("\n");
+    }
+    return 0;
+}

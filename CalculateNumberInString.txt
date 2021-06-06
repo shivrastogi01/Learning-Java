@@ -1,0 +1,49 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int find_nums_and_sum(string str) {
+
+	int sum_num = 0;
+	string temp_str;
+
+	for (int x = 0; x < str.length(); x++)
+	{
+		if (isdigit(str[x]))
+		{
+			temp_str.push_back(str[x]);
+
+			for (int y = x + 1; y < str.length(); y++)
+			{
+				if (y >= str.length())
+				{
+					break;
+				}
+				else if (isdigit(str[y]))
+				{
+					temp_str.push_back(str[y]);
+					x = y;
+				}
+				else
+				{
+					break;
+				}
+			}
+
+			sum_num += stoi(temp_str);
+			temp_str.clear();
+		}
+	}
+
+	return sum_num;
+}
+
+int main() {
+    string str1;
+    cout<<"Enter the String :\n";
+    getline (cin,str1);
+    cout<<"Your Input String : "<<str1<<"\n";
+    cout<<"The sum of the Numbers : "<<find_nums_and_sum(str1)<<endl; 
+	return 0;
+}

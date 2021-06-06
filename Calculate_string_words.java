@@ -5,13 +5,14 @@ public class Calculate_string_words
 	public static void main(String[] args)
 	{
 		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter any string");
 		String str=sc.nextLine();
 		sc.close();	
 		String str1=str.trim();
 		int count=1;
 		for(int i=0;i<str1.length();i++)
 		{
-			if((str1.charAt(i)==' ')||(str1.charAt(i)=='/t'))
+			if((str1.charAt(i)==' ')||(str1.charAt(i)=='\t'))
 			{	
 				count++;
 			}

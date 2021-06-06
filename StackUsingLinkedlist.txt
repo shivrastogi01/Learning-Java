@@ -1,0 +1,80 @@
+//implementation of Stack using linked list 
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+struct node
+{
+    int data;
+    struct node *link;
+    
+};
+struct node *top=0;
+void push(int x)
+{
+    struct node * newnode;
+    newnode=(struct node *)malloc(sizeof(struct node));
+    newnode->data=x;
+    newnode->link=top;
+    top=newnode;
+    
+}
+void display()
+{
+    struct node * temp;
+    temp=top;
+    if(top==0)
+    printf("\nList is Empty\n");
+    else
+    {
+        while(temp!=0)
+        {
+            printf("\n%d\n",temp->link);
+            temp=temp->link;
+        }
+    }
+    
+}
+
+void peek()
+{
+    if(top==0)
+    {
+        printf("stack is null");
+        
+    }
+    else
+    printf("%d",top->data);
+}
+
+void pop()
+{
+    
+    struct node *temp;
+    temp=top;
+    if(top==0)
+    printf("Underflow");
+    else
+    {
+        printf("%d",&top->data);
+        top=top->link;
+        free(temp);
+    }
+}
+
+void main()
+{
+    push(3);
+    push(7);
+    //push(5);
+    // display();
+    // peek();
+    // pop();
+     display();
+      
+      getch();
+    
+}
+
+
+

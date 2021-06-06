@@ -2,32 +2,23 @@ import java.util.*;
 
 public class Prime
 {
+	
+	static boolean isPrime(int n){
+		if(n==1)
+		return false;
+		for(int i=2;i*i<n;i++)
+		{
+			if(n%i==0)
+			return false;
+		}return true;
+	}
 public static void main(String args[])
 	{
 	System.out.println("Enter any number");
 	Scanner sc= new Scanner(System.in);
     int num=sc.nextInt();
-	int i,j;
-	int count=0;
-	for(i=1;i<=num;i++)
-		{
-			for(j=2;j<i;j++)
-			{
-			   if	((i%j)==0)
-			   {
-				count++;
-				if(count!=0)
-				{
-				System.out.println(i);
-				 break;
-				}
-			    }
-			
-			}
-			
-			
-			
-		}
+	System.out.println(isPrime(num));
+		
 	}
 
-}
+}//time complexity is bigO(squareroot of N)

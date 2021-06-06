@@ -12,14 +12,14 @@ public class ArraySimple
 		//Array[5]=sc.nextInt();
 		
 		
-	/*	for(int i=0;i<Array.length;i++)
+		for(int i=0;i<Array.length();i++)
 			{
 				System.out.println(Array[i]);
 				
 			
 			}
 		
-		*/
+		
 	}
 
 }
