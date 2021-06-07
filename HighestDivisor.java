@@ -14,7 +14,7 @@ class HighestDivisor {
 
 	public static void main (String[] args) {
 	Scanner sc=new Scanner(System.in);
-	System.out.println("Enter both the numbers")
+	System.out.println("Enter both the numbers");
 	int a=sc.nextInt();
 	int b=sc.nextInt();
 
