@@ -8,12 +8,12 @@ class CoinProblem
 	public static void main(String[] args) throws IOException
 	{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		//System.out.println("Enter the digit in the string");
+		System.out.println("Enter the digit in the string");
         int t = Integer.parseInt(br.readLine().trim());
         while(t-->0)
         {
             int n = Integer.parseInt(br.readLine().trim());
-		//	System.out.println("Enter the String in 01 form");
+		System.out.println("Enter the String in 01 form");
             String S = br.readLine().trim();
             Solution ob = new Solution();
             

@@ -2,7 +2,7 @@ import java.util.*;
 import java.lang.*; 
 import java.io.*; 
 
-class Graph { //BellmanFord algo for negative edge
+class BellmanFordNegativeEdge { 
 	
 	class Edge { 
 		int src, dest, weight; 
@@ -15,7 +15,7 @@ class Graph { //BellmanFord algo for negative edge
 	int V, E; 
 	Edge edge[]; 
 
-	Graph(int v, int e) 
+	BellmanFordNegativeEdge(int v, int e) 
 	{ 
 		V = v; 
 		E = e; 
