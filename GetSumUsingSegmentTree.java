@@ -4,7 +4,7 @@ import java.lang.*;
 
 
 
-class RangeQueryInSegmentTree
+class GetSumUsingSegmentTree
 { 
 
 	static int CST(int ss, int se, int si, int arr[], int tree[])
@@ -14,7 +14,6 @@ class RangeQueryInSegmentTree
 			tree[si] = arr[ss];
 			return arr[ss];
 		}
-		
 
 		int mid = (ss + se) / 2;
 
