@@ -5,7 +5,7 @@ import java.util.*;
 import java.lang.*; 
 import java.io.*; 
 
-class Graph
+class KruskalAlgorithm
 { 
 	// A class to represent a graph edge 
 	class Edge implements Comparable<Edge> 
@@ -30,7 +30,7 @@ class Graph
 	Edge edge[]; // collection of all edges 
 
 	// Creates a graph with V vertices and E edges 
-	Graph(int v, int e) 
+	KruskalAlgorithm(int v, int e) 
 	{ 
 		V = v; 
 		E = e; 
