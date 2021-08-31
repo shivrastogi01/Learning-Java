@@ -30,15 +30,15 @@ class SubSetSumUsingDP {
             }
         }
  
-        /* // uncomment this code to print table
+    /*    // uncomment this code to print table
         for (int i = 0; i <= sum; i++)
         {
         for (int j = 0; j <= n; j++)
             System.out.println (subset[i][j]);
-        } */
+        } 
  
         return subset[sum][n];
-    }
+    }*/
  
     /* Driver code*/
     public static void main(String args[])
