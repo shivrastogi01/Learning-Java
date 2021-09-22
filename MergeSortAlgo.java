@@ -6,8 +6,8 @@ class MergeSortAlgo
 {
     public static void main (String[] args) 
     {
-        int a[] = new int[]{10,5,30,15,7};
-	    int l=0,r=4;
+        int a[] = new int[]{10,0,30,15,9,8,37,17};
+	    int l=0,r=7;
         
         mergeSort(a,l,r);
     	for(int x: a)
