@@ -1,0 +1,43 @@
+**************************SQL Queries********************************
+1. Find which employee hai maximum salary
+Select Emp_name from table_name where salary =Select Max(salary) from Table_name;
+
+2. find the highest salary from emp_table
+Select Max(salary) from emp_table;
+
+3.Find second highest salary from emp_table
+ select Max(salary) from emp_table where salary<> Select Max(salary) from emp_table;
+ 
+ 4. find emp_name who has second highest salary in emp_table
+  select emp_name from emp_table where salary = select Max(salary) from emp_table where salary<> Select Max(salary) from emp_table;
+  
+  5. write a query to find all dept. names along with no of employee  in that department
+  select dept ,Count(*) from emp_table group by dept;
+  
+  6. print the name of employee which dept has las then 2 employee
+  select Emp_name from emp_table where dept In (Select dept from emp_table group by dept having Count (*) <2);
+  
+  ***********************************Aggregate Functions - SUM, AVG(n), COUNT, MIN, MAX Functions******************************
+ 
+ 1. find maximun salary from table
+ select Max(salary ) from table_name;
+ 
+ 2.find minimum salary from table
+ select Min(salary ) from table_name;
+ 
+ 3. find total numbers of rows
+ select Count(*) from table_name;
+ 
+ 4. find total salary of employees
+  select sum(salary) from table_name;
+  
+ 5.find average salary
+ select Avg(salary) from table_name;
+ 
+ ********************************************* USE OF In/Not In ********************************************************************
+ 1. Find the name of employee who are working on  a project (two differen table , emp_table and project_table,Emp_id is foreign key)
+ select emp_name from emp_table where Emp_id In (Select Emp_id from project_table);
+ 
+ 2.Find employee who are not working in any project
+ Select emp_name from emp_table where Emp_id Not In (Select Emp_id from project_table);
+  
