@@ -40,4 +40,11 @@ Select Max(salary) from emp_table;
  
  2.Find employee who are not working in any project
  Select emp_name from emp_table where Emp_id Not In (Select Emp_id from project_table);
+ 
+ 3. find the Nth highest salary fromgiven table
+ selct id,salary from emp_table e1 where N-1=(Select Count(Distinct salary)from emp_table e2 where e2.salary>e1.salary);
+ 
+ 4.you need to display last name of employee who have 'A' as a second Character in their name.
+ Select last_name from table_name where last_name like '_A%'; //"_" is for no of vacant space and % is for any no of character.
+ 
   
