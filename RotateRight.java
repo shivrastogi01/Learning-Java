@@ -9,6 +9,7 @@ class RotateRight {
         System.out.println("Original array: ");    
         for (int i = 0; i < arr.length; i++) {     
             System.out.print(arr[i] + " ");     
+			
         }      
             
         //Rotate the given array by n times toward right    
