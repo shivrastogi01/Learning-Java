@@ -8,7 +8,7 @@ class MaximumProductSubArray {
             ans = Math.max(ans,cprod);
             if(cprod==0)
             {
-                cprod=1;
+                cprod=1;`
             }
         }
         cprod=1;
