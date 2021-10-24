@@ -1,5 +1,7 @@
+
 class TriangleMinimumPath {
-    public int minimumTotal(List<List<Integer>> triangle) {
+
+    public static int minimumTotal(List<List<Integer>> triangle) {
         int[] dp = new int[triangle.size()];
         if((triangle.get(0)).isEmpty())
             return 0;
