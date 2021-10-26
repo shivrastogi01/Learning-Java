@@ -1,4 +1,4 @@
-class BuyAndSellStock3 {
+class BuyAndSellStock3 {// Atmost 2 transaction
   public int maxProfit(int[] prices) {
     int buyFirst = Integer.MIN_VALUE;  // First time buying stock
     int buySecond = Integer.MIN_VALUE; // Second time buying stock
