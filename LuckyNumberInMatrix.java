@@ -1,4 +1,4 @@
-class LuckyNumberInMatrix{
+class LuckyNumberInMatrix{//maximum number in row and column
     public List<Integer> luckyNumbers (int[][] matrix) {
         ArrayList<Integer> lucky = new ArrayList<>();
         int min;
