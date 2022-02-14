@@ -1,5 +1,5 @@
 import java.util.*;
-public class FinfElementsInRotatedArray {
+public class FinfElementsInRotatedArray { 
     static int search(int arr[], int target) {
         int low = 0, high = arr.length - 1; //<---step 1
 
