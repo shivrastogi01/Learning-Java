@@ -1,0 +1,17 @@
+Swap of 2 numbers with or without use of 3rd variable.
+Factorial of a number using recursion or without recursion.
+Reverse a string
+reverse words of sentence .
+Palindrome of Number
+Anagram of a Number.
+Find Duplicate Number in a Array.
+Check the number wether is prime or not.
+Find all Prime numbers upto N.
+Compare 2 strings they are same or not.
+Count number of vovel and consonant in a String.
+Find the maximum occurence of character in a String.
+Reverse an Array.
+Find 2nd largest element in a Array.
+Fibonacci series .
+searching Algo =>Famous famous 
+Sorting Algos.=> Famous famous
