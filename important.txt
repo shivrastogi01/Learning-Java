@@ -2,3 +2,6 @@
 //DataFormatter formatter=new DataFormatter(); 
 	//String val =formatter.formatCellValue(sheet.getRow(i).getCell(1));
 	//list.get(1).sendKeys();
+	
+	//https://www.youtube.com/watch?v=ehYGh4WEP-4
+	reading mail 
