@@ -1,4 +1,4 @@
-class BinaryTreePruning{
+class BinaryTreePruning {
     public TreeNode pruneTree(TreeNode root) {
         TreeNode ans = postOrder(root);
         return ans;
