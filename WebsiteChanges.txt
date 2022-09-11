@@ -1,0 +1,10 @@
+1.Change Copyright
+2.change email in contact us page.
+3.Refund policy page didn't open.
+4.youtube views link didn't open.
+5.youtube all link didn't open properly.
+6.Net Profit column digits goes out of bound in Dashboard.
+7.Non of the youtube logo open .
+8.Change homepage tag line.
+9.Twitter logo on the bottom side didn't open in the home page.
+10.Horizontally arrow in service page didn't work.
