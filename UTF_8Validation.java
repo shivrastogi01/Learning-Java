@@ -3,7 +3,7 @@ class UTF_8Validation {
     private static final int bit_6_mask = 1 << 6;
     private static final int bit_5_mask = 1 << 5;
     private static final int bit_4_mask = 1 << 4;
-    private static final int bit_3_mask = 1 << 3;
+    private static final int bit_3_mask = 1 << 3;	
     
     public boolean validUtf8(int[] data) {
         int size = data.length;
